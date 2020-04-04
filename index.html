@@ -8,10 +8,13 @@
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/moon.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<script src="plugin/markdown/marked.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -25,8 +28,77 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h1><code>h1</code> tag</h1>
+					<h2><code>h2</code> tag</h2>
+					<h3><code>h3</code> tag</h3>
+				</section>
+				<section>
+					<h1>Slide 3 with fragments</h1>
+					<p class="fragment">paragraph</p>
+					<p class="fragment">paragraph</p>
+					<p>paragraph without <code>class="fragment"</code></p>
+					<p class="fragment">paragraph</p>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						# Markdown example
+				
+						A paragraph with some text and a [link](https://www.google.com).
+						- A bullet point with a <a href="https://www.google.com" target="_blank">link that has `target="_blank"`</a>
+						```js
+						// some JavaScript code:
+						const someSillyFunction = (someWords) => {
+							alert(someWords);
+						};
+						```
+					</textarea>
+				</section>
+				<section>
+<pre><code data-line-numbers="">// some JavaScript code:
+const sayHi = (toPerson, greeting, someExtraWords) => {
+  alert(greeting);
+  alert(greeting + ' ' toPerson);
+  alert('Some extra words: ' + someExtraWords);
+};
+</code></pre>
+				</section>
+				<section>
+<pre><code data-line-numbers="2">// some JavaScript code:
+const sayHi = (toPerson, greeting, someExtraWords) => {
+  alert(greeting);
+  alert(greeting + ' ' toPerson);
+  alert('Some extra words: ' + someExtraWords);
+};
+</code></pre>
+				</section>
+				<section>
+<pre><code data-line-numbers="4">// some JavaScript code:
+const sayHi = (toPerson, greeting, someExtraWords) => {
+  alert(greeting);
+  alert(greeting + ' ' toPerson);
+  alert('Some extra words: ' + someExtraWords);
+};
+</code></pre>
+				</section>
+				<section>
+<pre><code data-line-numbers="5">// some JavaScript code:
+const sayHi = (toPerson, greeting, someExtraWords) => {
+  alert(greeting);
+  alert(greeting + ' ' toPerson);
+  alert('Some extra words: ' + someExtraWords);
+};
+</code></pre>
+				</section>
+				<section>
+<pre><code data-line-numbers="2,4-5">// some JavaScript code:
+const sayHi = (toPerson, greeting, someExtraWords) => {
+  alert(greeting);
+  alert(greeting + ' ' toPerson);
+  alert('Some extra words: ' + someExtraWords);
+};
+</code></pre>
+				</section>
 			</div>
 		</div>
 
